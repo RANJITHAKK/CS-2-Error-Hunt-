@@ -61,6 +61,6 @@ app.get('/',cors(),function(req,res){    //Part #2 Point 7
 
 
 
-app.listen(3000,()=>{   // Part #1 Point 5 Port number changed
+    app.listen(process.env.PORT || 3000,()=>{   // Part #1 Point 5 Port number changed
     console.log("Server Ready on 3000");
-});
+    });
